@@ -1,0 +1,16 @@
+const Discord = require("discord.js")
+
+module.exports = {
+  name: "mcskin", // Coloque o nome do comando
+
+  description: "pesquise uma skin", // Coloque a descrição do comando
+  
+  type: Discord.ApplicationCommandType.ChatInput,
+
+  run: async (client, interaction) => {
+
+    const search = interaction.options.getString("pesquisa")
+
+https://starlightskins.lunareclipse.studio/skin-render/marching/Astra_plays/full
+  }
+}
