@@ -21,6 +21,8 @@
     "nodemon": "^3.0.1"
   },
   "dependencies": {
+    "axios": "^1.6.2",
+    "better-sqlite3": "^9.1.1",
     "canvas": "^2.11.2",
     "cors": "^2.8.5",
     "discord.js": "^14.13.0",
@@ -29,7 +31,10 @@
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "kettraworld-ping": "^1.1.2",
+    "mysql2": "^3.6.5",
     "node-fetch": "^3.3.2",
-    "node.js": "^0.0.1-security"
+    "node.js": "^0.0.1-security",
+    "puppeteer": "^21.5.2",
+    "quick.db": "^9.1.7"
   }
 }
