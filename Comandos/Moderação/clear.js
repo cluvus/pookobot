@@ -8,8 +8,8 @@ module.exports = {
         {
             name: 'quantidade',
             description: 'Insira um número de mensagens para serem excluidas.',
-            type: Discord.ApplicationCommandOptionType.Number,
-            required: true,
+             type: Discord.ApplicationCommandOptionType.Number,
+        required: false,
         }
     ],
 
@@ -21,15 +21,16 @@ module.exports = {
             interaction.reply({ content: `❌ | Você não tem permissão para utilizar este comando.`, ephemeral: true })
         } else {
 
-            if (parseInt(numero) > 200 || parseInt(numero) <= 0) {
+            if (parseInt(numero) > 100 || parseInt(numero) <= 0) {
 
                 interaction.reply({ content: `❌ | Insira um número de mensagens para serem apagadas! Lembrando que tem que ser um número de \`1 á 99\``, ephemeral: true})
 
             } else {
 
+
                 interaction.channel.bulkDelete(parseInt(numero))
 
-                interaction.reply(`**Chat limpo com sucesso!!!**\n\n♻ **| Faxineiro:** ${interaction.user}\n\n🧹 **| Mensagens Limpas:** \`${numero}\``)
+                interaction.reply({ content: `**Chat limpo com sucesso!!!**\n\n🧹 **| Mensagens Limpas:** \`${numero}\``, ephemeral: true})
 
                 let apagar_mensagem = "nao" // sim ou nao
 
