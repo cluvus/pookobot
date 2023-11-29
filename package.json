@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
+  "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
@@ -147,6 +147,7 @@
     "js-yaml": "^4.1.0",
     "json-parse-even-better-errors": "^2.3.1",
     "jsonfile": "^4.0.0",
+    "kandaraku": "^1.6.5",
     "kettraworld-ping": "^1.1.2",
     "lines-and-columns": "^1.2.4",
     "lodash": "^4.17.21",
